@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+ body{
+    background-image: url("https://th.bing.com/th/id/OIP.Kv7Fel5ddQjiZZZN-Po2qwHaEo?w=292&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+    background-size:cover
+    }
+    .card {
+    box-shadow: 0 4px 6px rgba(52, 15, 218, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  .card-header {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #002B5B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+  }
+  .card-body {
+    padding: 20px;
+    background-color: #90c2fc;
+  }
+  .photo{
+    width: 250px;
+    height: 180px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(4, 4, 34);
+    color: white;
+    padding: 9px;
+    margin: 0px 20px;
+    cursor:pointer
+}
+.btn:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:#f4978e">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GoGreen</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="/carbonfootprint">Carbon FootPrint Calculator</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/requestshipping">Request Shipping</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/trucks">Trucks</a>
+              </li>
+            </ul>   
+            <li class="nav-item d-flex">
+              <a class="nav-link disabled">Business</a>
+           </li> 
+          </div>
+        </div>
+      </nav>
+
+    <div align="center">
+ <h2 style="text-align: center;color: white">
+        GOALS!!</h2>
+    </div>
+<div style="display: flex">
+  <div class="card">
+    <div class="card-header">
+      GOAL 1: NO POVERTY
+      <ng-content select="[card-header]"></ng-content>
+    </div>
+
+    <div class="card-body">
+
+        <img src="https://www.un.org/sites/un2.un.org/files/field/image/e_gif_01.gif" alt="Paintings" class="photo">
+
+        End poverty in all its forms everywhere
+Economic growth must be inclusive to provide sustainable jobs and promote equality.        <ng-content select="[card-body]"></ng-content>
+      <p>
+<!--        <div style="margin-top: 3.0%;margin-left: 30%;">-->
+<!--            <button type="button" class="btn">Contact</button>-->
+<!--        </div>-->
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+       GOAL 2: END HUNGER
+      <ng-content select="[card-header]"></ng-content>
+    </div>
+    <div class="card-body">
+        <img src="https://i0.wp.com/eclalibraries.org/wp-content/uploads/2020/03/2-28-The-end-of-hunger-image.jpg?fit=1600%2C2400&ssl=1" alt=warli class="photo">
+        The food and agriculture sector offers key solutions for development, and is central for hunger and poverty eradication.
+      <ng-content select="[card-body]"></ng-content>
+    <p>
+</div>
+</div>
+
+  <div class="card">
+    <div class="card-header">
+     Goal 3: GOOD HEALTH AND WELL-BEING
+      <ng-content select="[card-header]"></ng-content>
+    </div>
+    <div class="card-body">
+        <img src="https://th.bing.com/th/id/OIP.dRTYFpKoM08-5qzwy8KCkAHaEt?w=254&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="handicraft" class="photo">
+    <br>Ensuring healthy lives and promoting the well-being for all at all ages is essential to sustainable development.
+      <ng-content select="[card-body]"></ng-content>
+      <p>
+       </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+   Goal 4: QUALITY EDUCATION
+      <ng-content select="[card-header]"></ng-content>
+    </div>
+    <div class="card-body">
+        <img src="https://th.bing.com/th/id/OIP.o3Y_m4D2gJ9VaQSDJpfSJAHaEc?pid=ImgDet&rs=1" alt="bambooArt" class="photo">
+        Obtaining a quality education is the foundation to improving people’s lives and sustainable development.
+      <ng-content select="[card-body]"></ng-content>
+      <p>
+
+         </div>
+  </div>
+</div>
+
+<div style="display: flex">
+    <div class="card">
+      <div class="card-header">
+       Goal 5: GENDER EQUALITY
+        <ng-content select="[card-header]"></ng-content>
+      </div>
+      <div class="card-body">
+          <img src="https://th.bing.com/th/id/OIP.mzilBmfwOvuOHTrNH05jeAHaFj?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " alt="Pottery" class="photo">
+         Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prosperous and sustainable world.
+        <ng-content select="[card-body]"></ng-content>
+        <p>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        GOAL 6: Clean Water and Sanitation
+        <ng-content select="[card-header]"></ng-content>
+      </div>
+      <div class="card-body">
+          <img src="https://th.bing.com/th/id/OIP.bNs270PFxHAPdKak0_1G8AHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="CARPENTARY" class="photo">
+
+         <br>
+Clean, accessible water for all is an essential part of the world we want to live in.        <ng-content select="[card-body]"></ng-content>
+        <p>
+            <div style="margin-top: 4.0%;margin-left:30%;">
+
+        </div>     </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        GOAL 7: Affordable and Clean Energy
+        <ng-content select="[card-header]"></ng-content>
+      </div>
+      <div class="card-body">
+          <img src="https://th.bing.com/th/id/OIP.T8_gYRJd7wFzQu8Ebq-NEQHaEB?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="card" class="photo">
+Energy is central to nearly every major challenge and opportunity.        <ng-content select="[card-body]"></ng-content>
+            <p>
+                <div style="margin-top: 4.0%;margin-left:30%;">
+              </div>      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+       Goal 8: Decent Work and Economic Growth
+        <ng-content select="[card-header]"></ng-content>
+      </div>
+      <div class="card-body">
+          <img src="https://th.bing.com/th/id/OIP.5GpxE0HZmfiILaU3KwfpKgHaHa?w=182&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="stone" class="photo">
+         Sustainable economic growth will require societies to create the conditions that allow people to have quality jobs.
+        <ng-content select="[card-body]"></ng-content>
+        <p>
+
+            </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
